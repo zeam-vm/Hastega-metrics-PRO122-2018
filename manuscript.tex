@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% プログラミング研究会・発表申込みフォーム %%%%%%%%
+%%%%%%%%                                          %%%%%%%%
+%%%%%%%% 以下の記入例を削除して記入してください   %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% TeXで処理しますので，TeXに準じた記法でご記入ください．
+
+%%% 氏名・所属（和文および英文，発表者に○印をつけて下さい）
+\author{○山崎 進}{Susumu Yamazaki}{KUniv}[zacky@kitakyu-u.ac.jp]
+\author{久江 雄喜}{Yuki Hisae}{KUnivGS}[z8mcb008@eng.kitakyu-u.ac.jp]
+
+% 注:   和文，欧文の氏名の後に所属ラベルをつけて，以下で定義してください．
+%       氏と名の間はスペースを一つ空けてください．
+%       所属が複数の場合はラベルをカンマで区切り，並べてください．
+%       全角スペースは用いないでください．
+
+% 所属ラベルの定義 (和文と英文は「\\ 」で区切ってください)
+% 英語表記には，記入例に倣い，所属に続けて住所（市町村名または東京都特別区名，
+% 都道府県名，郵便番号の3点）もご記入ください．
+\affiliate{KUniv}{北九州市立大学  国際環境工学部\\
+Faculty of Environmental Engineering, The University of Kitakyusyu, Kitakyusyu, Fukuoka, 808-0135}
+
+\affiliate{KUnivGS}{北九州市立大学院 国際環境工学研究科 情報工学専攻\\
+Information Engineering, Graduate School of Environmental Engineering,The University of Kitakyusyu, Kitakyusyu, Fukuoka, 808-0135}
+
+
+%%% 代表者連絡先（氏名，住所，電話，Fax，電子メールアドレス）
+\contact{
+山崎 進
+北九州市立大学院 国際環境工学部
+〒808-0135 北九州市若松区ひびきの1番1号
+Tel: 093-695-3263
+E-mail：zacky@kitakyu-u.ac.jp
+}
+
+%%% タイトル（和文論文の場合は和文と英文の両方）
+% 和文タイトル
+\title{マルチコア利用効率指標の提案}
+
+% 英文タイトル
+\etitle{Proposal of Metrics for Efficiency of Multi-core Usage}
+
+
+
+
+%%% 発表概要（和文600字程度，英文200ワード程度．和文論文の場合は和文と
+%%%          英文の両方を，英文論文の場合は英文のみを書いてください）
+
+% 和文発表概要 (600字程度)
+\begin{abstract}
+% 和文概要を600字程度ここに書きます．
+% この発表申し込みフォームでは，発表概要ですので「本論文」とはせず，
+% 「本発表」などとしてください．
+% 逆に，実際の論文の概要では「本論文」などとするのが望ましいです．
+本発表では，CPU/GPUのマルチコアで並列実行するときに，各コアをどのくらいの効率で利用しているのかを計測する指標を提案する．提案指標は，並列度1の時の実行時間を並列実行した時の実行時間で割った比を求め，その比をさらに実行に用いた並列スレッド数で割って求める．すなわち提案指標は，各コアによる速度の伸びへの貢献度を表す．複数のコンピュータアーキテクチャ，複数のプログラミング言語で，並列スレッド数を変化させて整数演算ベンチマークを実行して提案指標を計測し，並列スレッド数との関係を分析したところ，並列スレッド数に対する対数項に負の係数を乗じた値と定数項の和で近似できることがわかった．この定数項と対数に対する係数を測定することで，言語処理系の持つ並列処理能力を定量評価できると考えた．
+\end{abstract}
+% 英文発表概要 (200ワード程度)
+\begin{eabstract}
+% English abstract should be written in this place.
+% Please use the phase such as ``this presentation'' rather than
+% ``this paper'' in this form since this is a presentation abstract.
+% On the other hand, ``this paper'' is preferable in the abstract
+% of the actual paper.
+This presentation proposes a metrics for efficiency of usage of each core when a code runs on multi-core CPU or GPU. Our metrics are calculated by an equation that an execution time by single-threaded per the time by parallel-executed and the number of parallel threads. In other words, it represents a contribution to an increase of the speed per a core. We evaluate it by executing an integer calculation benchmark using various computer architectures and programming languages, with changing the number of parallel threads, analyze the relationships between the number of parallel threads and it, and find that the relationships approximate the sum of logarithms with a negative coefficient and constants. We suppose that measuring of the coefficient and the constants enables us to evaluate quantitatively the abilities of the parallel processing of the language processors.
+\end{eabstract}
+
+%%% 論文誌投稿の希望の有無（どちらか残してください）
+% 希望しない
+
+%%% オリジナル論文とサーベイ論文の種別指定（どちらか残してください）
+%%% （論文誌投稿を希望しない場合は変更せずそのまま残してください）
+% オリジナル論文
+
+%%% 「短い発表」の希望（どちらか残してください）
+%%% （論文誌投稿を希望する場合は変更せずそのまま残してください）
+% 希望しない
+
+%%% 発表者の本年度冒頭(4月1日)時点での年齢（どちらか残してください）
+%%% （発表者が29歳以下であると申告された場合には，発表者をCS領域奨励賞の
+%%% 　選考対象とします．本申告は任意ですので，申告したくない場合には変更
+%%% 　せずそのまま残してください．）
+% 30歳以上
+
+%%%%%% ここまでプログラミング研究会・発表申し込みフォーム %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
